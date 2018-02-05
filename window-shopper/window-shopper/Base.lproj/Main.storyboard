@@ -28,9 +28,8 @@
                                     <constraint firstAttribute="height" constant="60" id="v8Z-8C-G1K"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="dasdasda" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k5e-wF-9iU">
-                                <rect key="frame" x="43" y="161" width="277" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="dasdasda" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k5e-wF-9iU" customClass="CurrencyTextField" customModule="window_shopper" customModuleProvider="target">
+                                <rect key="frame" x="40" y="155" width="295" height="17"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -41,9 +40,12 @@
                             <constraint firstItem="e3s-fl-X7r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1CB-Ue-tKQ"/>
                             <constraint firstItem="hVz-dr-N0u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1te-A8-NGM"/>
                             <constraint firstItem="e3s-fl-X7r" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4O3-hf-RwY"/>
+                            <constraint firstItem="k5e-wF-9iU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="A48-i9-X2x"/>
                             <constraint firstItem="e3s-fl-X7r" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="J1L-sV-GH5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k5e-wF-9iU" secondAttribute="trailing" constant="40" id="dcl-1W-a9m"/>
                             <constraint firstItem="e3s-fl-X7r" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="k5J-E6-88k"/>
                             <constraint firstItem="hVz-dr-N0u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="lZf-5J-TAF"/>
+                            <constraint firstItem="k5e-wF-9iU" firstAttribute="top" secondItem="hVz-dr-N0u" secondAttribute="bottom" constant="40" id="rtH-XZ-JQH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
