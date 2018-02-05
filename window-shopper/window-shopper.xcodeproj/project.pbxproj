@@ -12,6 +12,7 @@
 		5B22FBBA20289933001E175E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B22FBB820289933001E175E /* Main.storyboard */; };
 		5B22FBBC20289933001E175E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B22FBBB20289933001E175E /* Assets.xcassets */; };
 		5B22FBBF20289933001E175E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B22FBBD20289933001E175E /* LaunchScreen.storyboard */; };
+		5B22FBC92028A079001E175E /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B22FBC82028A079001E175E /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5B22FBBB20289933001E175E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B22FBBE20289933001E175E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B22FBC020289933001E175E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B22FBC82028A079001E175E /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +56,8 @@
 		5B22FBB320289933001E175E /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
-				5B22FBC720289A9F001E175E /* Controller */,
 				5B22FBC620289A91001E175E /* Views */,
+				5B22FBC720289A9F001E175E /* Controller */,
 				5B22FBB420289933001E175E /* AppDelegate.swift */,
 				5B22FBB820289933001E175E /* Main.storyboard */,
 				5B22FBBB20289933001E175E /* Assets.xcassets */,
@@ -68,6 +70,7 @@
 		5B22FBC620289A91001E175E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5B22FBC82028A079001E175E /* CurrencyTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B22FBC92028A079001E175E /* CurrencyTextField.swift in Sources */,
 				5B22FBB720289933001E175E /* MainVC.swift in Sources */,
 				5B22FBB520289933001E175E /* AppDelegate.swift in Sources */,
 			);
