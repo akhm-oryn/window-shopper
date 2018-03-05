@@ -28,10 +28,19 @@
                                     <constraint firstAttribute="height" constant="60" id="v8Z-8C-G1K"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k5e-wF-9iU" customClass="CurrencyTextField" customModule="window_shopper" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ваша зарплата" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k5e-wF-9iU" customClass="CurrencyTextField" customModule="window_shopper" customModuleProvider="target">
                                 <rect key="frame" x="40" y="155" width="295" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="vYT-GP-ys5"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Цена желаемого предмета" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQ2-Hd-nEE" customClass="CurrencyTextField" customModule="window_shopper" customModuleProvider="target">
+                                <rect key="frame" x="40" y="240" width="295" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Hsz-CS-ddV"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -42,11 +51,15 @@
                         <constraints>
                             <constraint firstItem="e3s-fl-X7r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1CB-Ue-tKQ"/>
                             <constraint firstItem="hVz-dr-N0u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1te-A8-NGM"/>
+                            <constraint firstItem="EQ2-Hd-nEE" firstAttribute="top" secondItem="k5e-wF-9iU" secondAttribute="bottom" constant="25" id="4w4-eB-oKE"/>
+                            <constraint firstItem="EQ2-Hd-nEE" firstAttribute="width" secondItem="k5e-wF-9iU" secondAttribute="width" id="AHP-U2-yHw"/>
+                            <constraint firstItem="EQ2-Hd-nEE" firstAttribute="height" secondItem="k5e-wF-9iU" secondAttribute="height" id="JGc-cY-4iN"/>
                             <constraint firstItem="k5e-wF-9iU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Nb4-dV-KXV"/>
                             <constraint firstItem="k5e-wF-9iU" firstAttribute="top" secondItem="hVz-dr-N0u" secondAttribute="bottom" constant="40" id="d6b-sY-rVw"/>
                             <constraint firstItem="e3s-fl-X7r" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="k5J-E6-88k"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k5e-wF-9iU" secondAttribute="trailing" constant="40" id="l4R-oI-ZP9"/>
                             <constraint firstItem="hVz-dr-N0u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="lZf-5J-TAF"/>
+                            <constraint firstItem="EQ2-Hd-nEE" firstAttribute="leading" secondItem="k5e-wF-9iU" secondAttribute="leading" id="waF-TK-z8P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
