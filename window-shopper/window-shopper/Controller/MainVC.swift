@@ -34,7 +34,14 @@ class MainVC: UIViewController {
 
 
     @objc func calculate() {
-        
+        if let wageTxt = wageTxt.text, let priceTxt = priceTxt.text {
+            if let wage = Double(wageTxt), let price = Double(priceTxt) {
+                view.endEditing(true)
+                resultLbl.isHidden = false
+                hoursLbl.isHidden = false
+                resultLbl.text = "\(Wage.getHours(forWage: wage, andPrice: price))"
+            }
+        }
     }
 
     @IBAction func clearCalculatorPressed(_ sender: Any) {
