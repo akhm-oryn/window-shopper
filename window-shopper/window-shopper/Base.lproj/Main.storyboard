@@ -71,6 +71,9 @@
                                 <state key="normal" title="Очистить содержимое">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="clearCalculatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lXA-R2-TSA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -98,7 +101,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="hoursLbl" destination="veM-4j-8A1" id="u5V-hY-x5w"/>
                         <outlet property="priceTxt" destination="EQ2-Hd-nEE" id="iw2-bo-xCG"/>
+                        <outlet property="resultLbl" destination="VtS-FB-aGo" id="4KO-eo-JhE"/>
                         <outlet property="wageTxt" destination="k5e-wF-9iU" id="tTt-bk-pnb"/>
                     </connections>
                 </viewController>
