@@ -18,7 +18,7 @@ class CurrencyTextField: UITextField {
         currencyLbl.textAlignment = .center
         currencyLbl.textColor = #colorLiteral(red: 0.1294117719, green: 0.2156862766, blue: 0.06666667014, alpha: 1)
         currencyLbl.layer.cornerRadius = 5.0
-        
+        currencyLbl.clipsToBounds = true
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.locale = .current
@@ -40,6 +40,7 @@ class CurrencyTextField: UITextField {
         layer.cornerRadius = 5.0
         textAlignment = .center
         
+        clipsToBounds = true
         
         if placeholder == nil {
             placeholder = " "
