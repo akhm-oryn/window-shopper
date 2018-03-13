@@ -11,6 +11,21 @@ import UIKit
 @IBDesignable
 class CurrencyTextField: UITextField {
     
+    override func draw(_ rect: CGRect) {
+        let size: CGFloat = 20
+        let currencyLbl = UILabel(frame: CGRect(x: 5, y: (frame.size.height / 2) - size / 2, width: size, height: size))
+        currencyLbl.backgroundColor = #colorLiteral(red: 0.3404104114, green: 0.5064863563, blue: 0.3016367257, alpha: 0.5124889965)
+        currencyLbl.textAlignment = .center
+        currencyLbl.textColor = #colorLiteral(red: 0.1294117719, green: 0.2156862766, blue: 0.06666667014, alpha: 1)
+        currencyLbl.layer.cornerRadius = 5.0
+        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = .current
+        currencyLbl.text = formatter.currencySymbol
+        addSubview(currencyLbl)
+    }
+    
     override func prepareForInterfaceBuilder() {
         customizeView()
     }
